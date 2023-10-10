@@ -3,36 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Models\Data;
+use App\Models\MemberPressUser;
 use App\Models\UserMemberPressData;
 use Illuminate\Http\Request;
 
 class ZapierController extends Controller
 {
-    //
 
+    public function createMemberPressUser(Request $request)
+{
+    $data = $request->all(); // Assuming you're using the default Laravel Request object
 
-    public function save(Request $request)
-    {
-        // Validate the incoming JSON data if needed
-        $data = $request->json()->all();
+    // Create a new instance of your model and fill it with the request data
+    $newRecord = new MemberPressUser(); // Replace 'YourModel' with the actual name of your model
+    $newRecord->name = $data['name'];
+    $newRecord->username = $data['username'];
+    $newRecord->school = $data['school'];
+    $newRecord->schoolAddress = $data['schoolAddress'];
+    $newRecord->userAddress = $data['userAddress'];
+    $newRecord->membershipID = $data['membershipID'];
+    $newRecord->enrollment = $data['enrollment'];
+    $newRecord->geolocation = $data['geolocation'];
+    $newRecord->squareFeet = $data['squareFeet'];
+    $newRecord->schoolAcres = $data['schoolAcres'];
+    $newRecord->schoolCountry = $data['schoolCountry'];
+    $newRecord->level = $data['level'];
 
-        $memberData = Data::create([
-            'data' => json_encode($data),
-        ]);
-        return $memberData;
-    }
-    public function retrieve(Request $request)
-    {
-        if ($request->has('all')) {
-            return Data::all();
-        } else if ($request->has('id')) {
-            return Data::find($request->input('id'));
-        } else if ($request->has('email')) {
-            $email = $request->input('email');
-               return Data::where('data->email', 'LIKE', '%' . $email . '%')->get();
-        }
+    // Save the new record to the database
+    $newRecord->save();
 
-    }
+    return response()->json(['message' => 'Record created successfully','data'=>$newRecord], 201);
+}
 
 
 

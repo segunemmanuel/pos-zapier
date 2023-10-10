@@ -20,8 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::post('/data', [ZapierController::class, 'save']);
-Route::get('/data/retrieve', [ZapierController::class, 'retrieve']);
-Route::get('/data/retrieve/email', [ZapierController::class, 'retrieveByEmail']);
+Route::post('/save-membepress-user', [ZapierController::class, 'createMemberPressUser']);
 
 
