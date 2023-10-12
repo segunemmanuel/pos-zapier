@@ -1,11 +1,20 @@
-* text=auto eol=lf
+*.css linguist-vendored
+*.scss linguist-vendored
+*.blade linguist-detectable=false
+*.blade.php linguist-detectable=false
+*.html linguist-detectable=false
+*.less linguist-detectable=false
+*.py linguist-detectable=false
+*.vue linguist-detectable=false
+*. coffee.md linguist-detectable=false
+*.sh linguist-detectable=false
+*.hbs linguist-detectable=false
+*.coffee  linguist-detectable=false
+*.html linguist-detectable=false
 
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
 
-/.github export-ignore
 CHANGELOG.md export-ignore
-.styleci.yml export-ignore
+
+*.js linguist-detectable=false
+*.hbs linguist-detectable=false
+
