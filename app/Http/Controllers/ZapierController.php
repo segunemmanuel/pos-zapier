@@ -2,46 +2,157 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\QuizSearchEvent;
 use App\Models\Data;
+use App\Models\MemberPressCourseCompletedUser;
+use App\Models\MemberPressQuizCompletedRecord;
 use App\Models\MemberPressUser;
 use App\Models\UserMemberPressData;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use OpenAI\Client as OpenAIClient;
+use OpenAI\Laravel\Facades\OpenAI;
 
 class ZapierController extends Controller
 {
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * save records when user signups for memberships in sitesafety
+     */
     public function createMemberPressUser(Request $request)
-{
-    $data = $request->all(); // Assuming you're using the default Laravel Request object
+    {
+        // Assuming you're using the default Laravel Request object
+        $data = $request->all();
 
-    // Create a new instance of your model and fill it with the request data
-    $newRecord = new MemberPressUser(); // Replace 'YourModel' with the actual name of your model
-    $newRecord->name = $data['name'];
-    $newRecord->username = $data['username'];
-    $newRecord->school = $data['school'];
-    $newRecord->schoolAddress = $data['schoolAddress'];
-    $newRecord->userAddress = $data['userAddress'];
-    $newRecord->membershipID = $data['membershipID'];
-    $newRecord->enrollment = $data['enrollment'];
-    $newRecord->geolocation = $data['geolocation'];
-    $newRecord->squareFeet = $data['squareFeet'];
-    $newRecord->schoolAcres = $data['schoolAcres'];
-    $newRecord->schoolCountry = $data['schoolCountry'];
-    $newRecord->level = $data['level'];
+        // Create a new instance of your model and fill it with the request data
+        $newRecord = new MemberPressUser(); // Replace 'YourModel' with the actual name of your model
+        $newRecord->name = $data['name'];
+        $newRecord->email = $data['email'];
+        $newRecord->username = $data['username'];
+        $newRecord->school = $data['school'];
+        $newRecord->schoolAddress = $data['schoolAddress'];
+        $newRecord->userAddress = $data['userAddress'];
+        $newRecord->membershipID = $data['membershipID'];
+        $newRecord->enrollment = $data['enrollment'];
+        $newRecord->geolocation = $data['geolocation'];
+        $newRecord->squareFeet = $data['squareFeet'];
+        $newRecord->schoolAcres = $data['schoolAcres'];
+        $newRecord->schoolCountry = $data['schoolCountry'];
+        $newRecord->level = $data['level'];
 
-    // Save the new record to the database
-    $newRecord->save();
+        // Save the new record to the database
+        $newRecord->save();
 
-    return response()->json(['message' => 'Record created successfully','data'=>$newRecord], 201);
-}
-
-
-
-
+        return response()->json(['message' => 'Record created successfully', 'data' => $newRecord], 201);
+    }
 
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * save memeberpress records when users completes a course
+     */
+    public function createMemberPressCourseCompletedRecords(Request $request)
+    {
+        $data = $request->all();
+        $newRecord = new MemberPressCourseCompletedUser();
+        $newRecord->email = $data['email'];
+        $newRecord->username = $data['username'];
+        $newRecord->registered_at = $data['registrationDate'];
+        $newRecord->first_name = $data['firstName'];
+        $newRecord->last_name = $data['lastName'];
+//        $newRecord->courseData = json_encode($data['data']);
+        $newRecord->status = $data['status'];
+        $newRecord->registrationDate = $data['registrationDate'];
+        $newRecord->user_id = $data['userId'];
+        $newRecord->courseName = $data['courseName'];
+        // Save the new record to the database
+        $newRecord->save();
+
+        event(new QuizSearchEvent($data['email'], $data['courseName']));
+        return response()->json(['message' => 'Record created successfully', 'data' => $newRecord], 201);
+
+    }
+
+
+    public function createMemberPressQuizRecordWhenCompleted(Request $request)
+    {
+        $data = $request->all();
+
+        $attributes = [
+            'quizId' => $data['quizId'],
+            'courseId' => $data['courseId'],
+            'quizName' => $data['quizName'],
+            'courseName' => $data['courseName'],
+            'quizScore' => $data['quizScore'],
+            'totalScorePossible' => $data['totalScorePossible'],
+            'username' => $data['username'],
+            'lastName' => $data['lastName'],
+            'firstName' => $data['firstName'],
+            'email' => $data['email'],
+            'completedDate' => $data['completedDate'],
+            'completionStatus' => $data['completionStatus'],
+            'startDate' => $data['startDate'],
+            'quizAttemptId' => $data['quizAttemptId'],
+            'miscData' => json_encode($data['miscData']),
+            'quizPointsScored' => $data['quizPointsScored'],
+            'quizPointsPossible' => $data['quizPointsPossible'],
+            'fullname' => $data['fullname'],
+//            'user_id' => $data['user_id'],
+        ];
+
+        MemberPressQuizCompletedRecord::create($attributes);
+        return response()->json(['message' => 'Record created successfully', 'data' =>$attributes], 201);
+
+    }
 
 
 
+    public function analyzeAssessment($customizedCollection)
+    {
+        // dd($customizedCollection);
+        $responses = [];
+        foreach ($customizedCollection as $data) {
+            // Check if it's a quiz record or user record
+            if ($data['record_type'] === 'quiz') {
+                $quizName = $data['quizName'];
+                $score = $data['score'];
+                $totalScorePossible = $data['totalScorePossible'];
 
-}
+                // Create a prompt based on the quiz data
+                $prompt = "Based on public data from schoolsafety.gov, is $score out of $totalScorePossible possible scores good for a school trying to improve its $quizName and improve gun safety readiness. Send action plans or recommendations for improvements (This is a must!). Send action plans in bullet points with a paragraph summarizing. Please use a formal tone and avoid using 'yes' or 'no' in the response.";
+
+                // Generate a response using OpenAI
+                $response = OpenAI::completions()->create([
+                    'model' => 'text-davinci-003',
+                    'prompt' => $prompt,
+                    'max_tokens' => 200,  // Adjust max_tokens as needed
+                    'temperature' => 0.7,  // Adjust temperature as needed
+                ]);
+
+                // Get the generated response text
+                $generatedResponse = $response['choices'][0]['text'];
+
+                // Store the response for this quiz or user record
+                $responses[] = [
+                    'record_type' => $data['record_type'],
+                    'quizName' => $quizName,
+                    'courseName'=>$data['courseName'],
+                    'quizId'=>$data['quizId'],
+                    'actionPlans' => $generatedResponse,
+                ];
+            }
+        }
+
+        // Log the responses for debugging
+        Log::info($responses);
+
+        // Return the generated responses as JSON
+        return response()->json([
+            'responses' => $responses,
+        ]);
+    }
+    }
+

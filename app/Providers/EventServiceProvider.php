@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Listeners\QuizSearchListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -17,6 +18,9 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+        \App\Events\QuizSearchEvent::class => [
+            \App\Listeners\QuizSearchListener::class,
         ],
     ];
 
@@ -35,4 +39,12 @@ class EventServiceProvider extends ServiceProvider
     {
         return false;
     }
+
+
+    protected $subscribe = [
+        // visits related
+        QuizSearchListener::class,
+
+    ];
+
 }

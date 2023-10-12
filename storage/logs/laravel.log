@@ -1,0 +1,502 @@
+[2023-10-12 00:56:49] local.INFO: array (
+  0 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Collaborative Planning',
+    'quizId' => 1,
+    'actionPlans' => ' 
+
+With a score of 75 out of 100, a school is making good progress towards improving its Collaborative Planning and gun safety readiness. Nevertheless, there are still improvements that can be made to achieve a higher score and ensure the safety of students and staff. The following action plans can be implemented to increase the school’s Collaborative Planning and gun safety readiness score: 
+
+• Establish a school safety committee that meets regularly to discuss and assess the school’s safety plans. 
+
+• Develop an emergency plan that includes protocols for responding to a variety of potential emergencies, such as active shooters, natural disasters, and violent threats.
+
+• Create a culture that encourages open communication between students and staff.
+
+• Involve the school resource officer in school safety planning and collaboration.
+
+• Provide regular training for staff on safety protocols and emergency response plans.
+
+• Hold regular drills and simulations to help students and staff practice responding to emergency situations.
+',
+  ),
+  1 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Information Sharing',
+    'quizId' => 1,
+    'actionPlans' => '
+
+A score of 75 out of 100 is a respectable result for a school attempting to improve its Information Sharing and gun safety readiness. However, there is still room for improvement and the following action plans can help the school reach higher scores in the future: 
+
+• Develop an effective communication system for sharing information between school staff, local law enforcement, and other relevant parties.
+
+• Establish protocols for collecting and sharing relevant information with the appropriate stakeholders.
+
+• Increase student access to mental health resources, such as counseling and support groups.
+
+• Establish a clear policy for reporting suspicious activity or potential threats.
+
+• Provide regular training for staff and students on gun safety and active shooter drills.
+
+• Implement measures to increase visibility of school staff and security personnel on campus.
+
+• Establish a clear disciplinary policy to address potential threats.
+
+• Engage the community in the process of improving school safety.
+
+Overall, these action plans can help',
+  ),
+  2 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Joint Training Exercises ',
+    'quizId' => 1,
+    'actionPlans' => '
+
+A score of 75 out of 100 on Joint Training Exercises and gun safety readiness is an acceptable score, but there is still room for improvement. To ensure the highest level of safety, the following action plans are recommended:
+
+• Increase the frequency of joint training exercises between staff, security personnel, and local law enforcement to at least twice a year.
+• Develop a comprehensive safety protocol for all staff regarding gun safety readiness.
+• Ensure that all security personnel and law enforcement officers are up to date on the latest best practices for gun safety.
+• Develop an updated emergency response plan that includes protocols for managing potential gun-related incidents.
+• Increase communication between staff, security personnel, and local law enforcement to ensure that all parties are aware of relevant security protocols.
+
+By implementing these action plans, the school will be better prepared to handle any potential gun-related incidents that may arise, as well as improve their Joint Training Exercises and gun safety readiness scores.',
+  ),
+)  
+[2023-10-12 00:57:02] local.INFO: array (
+  0 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Collaborative Planning',
+    'quizId' => 1,
+    'actionPlans' => '
+
+A score of 75 out of 100 is a decent rating when it comes to a school\'s Collaborative Planning and gun safety readiness. However, in order to make certain that the school is adequately prepared to respond to a gun safety crisis, there are several action plans and recommendations that should be considered:
+
+• Establish a clear chain of command for any gun safety related emergencies. This will help to ensure that all stakeholders are informed and can act quickly in the event of a crisis. 
+• Develop a comprehensive gun safety policy that outlines the expectations and guidelines for everyone in the school. This should include information on storage of weapons and ammunition, the reporting of suspicious activity, and emergency response procedures.
+• Utilize emergency drills and simulations to help staff and students become familiar with gun safety protocols and responses.
+• Implement a gun safety awareness program that educates students, staff, and parents on the dangers of firearms and the importance of following safety procedures. 
+• Increase communication',
+  ),
+  1 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Information Sharing',
+    'quizId' => 1,
+    'actionPlans' => '
+
+A score of 75 out of 100 on the Information Sharing and Gun Safety Readiness metric is a decent score, but there is still room for improvement. In order to ensure the school\'s safety and security, the following action plans should be implemented: 
+
+• Establish a data sharing protocol between the school and local law enforcement, so that information can be collected and shared across both entities in the event of an emergency.
+
+• Create a comprehensive communication plan for students, faculty, and parents that outlines the school’s gun safety policies and procedures.
+
+• Implement a school-wide training program for faculty and staff on how to recognize and respond to situations involving firearms.
+
+• Establish a crisis management team to review and revise policies for handling firearms in the event of an emergency.
+
+• Conduct regular drills and exercises that focus on gun safety.
+
+• Utilize technology to monitor and track student and faculty access to firearms on school property.
+',
+  ),
+  2 => 
+  array (
+    'record_type' => 'quiz',
+    'quizName' => '
+ Joint Training Exercises ',
+    'quizId' => 1,
+    'actionPlans' => '
+
+Based on the public data from schoolsafety.gov, a score of 75 out of 100 is considered satisfactory for a school attempting to improve its Joint Training Exercises and gun safety readiness. The school should strive to improve in order to ensure the safety of its students and faculty. To do so, the following action plans and recommendations should be implemented:
+
+-Develop a comprehensive plan for the school to provide comprehensive, ongoing training for faculty, staff, and students on gun safety and emergency response protocols.
+
+-Establish a communication plan to ensure that all faculty and staff are aware of emergency response protocols, and that all students are aware of gun safety protocols.
+
+-Implement a system to regularly review and update the school\'s emergency response plans.
+
+-Conduct regular joint training exercises with local law enforcement agencies to ensure the school is prepared to respond to any incidents involving firearms.
+
+-Create an advisory committee to review the school\'s policies and procedures regarding gun',
+  ),
+)  
+[2023-10-12 00:58:24] local.ERROR: syntax error, unexpected token "=", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"=\", expecting \"]\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:142)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:25] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:26] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:27] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:29] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:30] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:31] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 23)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:31] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:32] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting variable or "{" or "$" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting variable or \"{\" or \"$\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2023-10-12 00:58:33] local.ERROR: syntax error, unexpected single-quoted string "quizId", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected single-quoted string \"quizId\", expecting \"]\" at C:\\laragon\\www\\pos-zapier-client\\laravel\\app\\Http\\Controllers\\ZapierController.php:143)
+[stacktrace]
+#0 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\laragon\\\\www\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#3 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#4 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#5 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#6 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#7 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1066): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#8 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(982): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(943): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Listeners\\\\Q...')
+#11 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Listeners\\\\Q...', Array, true)
+#12 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Listeners\\\\Q...', Array)
+#13 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Listeners\\\\Q...', Array)
+#14 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(207): Illuminate\\Foundation\\Application->make('App\\\\Listeners\\\\Q...')
+#15 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(179): Illuminate\\Events\\Dispatcher->resolveSubscriber('App\\\\Listeners\\\\Q...')
+#16 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Events\\Dispatcher->subscribe('App\\\\Listeners\\\\Q...')
+#17 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider.php(49): Illuminate\\Support\\Facades\\Facade::__callStatic('subscribe', Array)
+#18 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(103): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1007): Illuminate\\Support\\ServiceProvider->callBootingCallbacks()
+#25 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(991): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\EventServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\EventServiceProvider), 22)
+#27 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(990): array_walk(Array, Object(Closure))
+#28 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\laragon\\www\\pos-zapier-client\\laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#32 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 

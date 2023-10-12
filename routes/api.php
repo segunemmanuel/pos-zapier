@@ -20,6 +20,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+//<!-- memberpress routes -->
 Route::post('/save-membepress-user', [ZapierController::class, 'createMemberPressUser']);
+
+Route::post('/save-memberpress-course-compeleted',[ZapierController::class, 'createMemberPressCourseCompletedRecords']);
+
+Route::post('/save-memberpress-quiz-compeleted',[ZapierController::class, 'createMemberPressQuizRecordWhenCompleted']);
+
+
+
 
 
