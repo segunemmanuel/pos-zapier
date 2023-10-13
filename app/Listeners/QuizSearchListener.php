@@ -76,7 +76,6 @@ class QuizSearchListener
             ];
         }
     });
-    Log::info($customizedCollection);
 
         $this->zapierController->analyzeAssessment($customizedCollection);
     }

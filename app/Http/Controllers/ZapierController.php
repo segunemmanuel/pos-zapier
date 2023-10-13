@@ -201,7 +201,7 @@ $finalData = [
 ];
 
 // Define the API endpoint for Anvil
-$apiEndpoint = 'https://app.useanvil.com/api/v1/fill/41uEFk6E6OKG5AfnlCgy.pdf'; // Replace 'your_template_id' with the actual template ID
+$apiEndpoint = 'https://app.useanvil.com/api/v1/fill/41uEFk6E6OKG5AfnlCgy.pdf';
 
 $username = 'FsmVT2JdbQATPnfBKSgndBtNusV9AARx'; // Replace with your username
 $password = ''; // Empty password
@@ -236,8 +236,5 @@ try {
 
 
 }
-
-
-
 }
 
