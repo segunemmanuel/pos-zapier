@@ -166,57 +166,76 @@ class ZapierController extends Controller
 
         ],201);
 Log::info($dataResponse);
+// Initialize an empty $transformedData array
+$transformedData = [];
 
-}
+// Extract the data from the responses and user details
+$userDetails = $filteredUserRecords[0];
+$firstResponse = $responses[0];
 
+// Populate the $transformedData array
+$transformedData['school'] = $userDetails['school'];
+$transformedData['name'] = $userDetails['username'];
+$transformedData['phone'] = '';  // Add the phone number if available
+$transformedData['schoolAddress'] = $userDetails['schoolAddress'];
+$transformedData['level'] = $userDetails['level'];
+$transformedData['geolocation'] = $userDetails['geolocation'];
+$transformedData['enrollment'] = $userDetails['enrollment'];
+$transformedData['squareFeet'] = $userDetails['squareFeet'];
+$transformedData['schoolAcres'] = $userDetails['schoolAcres'];
 
+// Sample fields from the first response, you can adjust these as needed
+$transformedData['courseName'] = $firstResponse['courseName'];
+$transformedData['actionPlans'] = $firstResponse['actionPlans'];
+// $transformedData['score'] = $firstResponse['score'];
 
-public function createSamplePDF(Request $request)
-{
+// Additional fields
+$transformedData['caste92b20d0618011ee93c9ad36b206e3d6'] = 'Action Points';
 
+// Create the final structure
+$finalData = [
+    'title' => '2nd october 2023 version 1',
+    'fontSize' => 10,
+    'textColor' => '#333333',
+    'data' => $transformedData,
+];
 
-    $username = 'FsmVT2JdbQATPnfBKSgndBtNusV9AARx'; // Username
-    $password = ''; // Empty password
-    $pdfTemplateID=;
+// Define the API endpoint for Anvil
+$apiEndpoint = 'https://app.useanvil.com/api/v1/fill/41uEFk6E6OKG5AfnlCgy.pdf'; // Replace 'your_template_id' with the actual template ID
 
-    // Create a Guzzle client
-    $client = new Client();
+$username = 'FsmVT2JdbQATPnfBKSgndBtNusV9AARx'; // Replace with your username
+$password = ''; // Empty password
+$client = new Client();
 
-    // Define the API endpoint for Anvil
-    $apiEndpoint = 'https://app.useanvil.com/api/v1/fill/41uEFk6E6OKG5AfnlCgy.pdf';
+try {
+    // Send a POST request to the Anvil API with basic authentication
+    $response = $client->post($apiEndpoint, [
+        'json' => $finalData,
+        'headers' => [
+            'Authorization' => 'Basic ' . base64_encode($username . ':'), // Note the colon after the username
+        ],
+    ]);
 
-    try {
-        // Send a POST request to the Anvil API with Basic Authentication
-        $response = $client->post($apiEndpoint, [
-            'json' => [
-                'template_id' => $pdfTemplateID,
-                'data' => $exampleData,
-            ],
-            'auth' => [$username, $password], // Basic Authentication
-        ]);
+    // Check the response status code
+    if ($response->getStatusCode() === 200) {
+        // Successfully received the filled PDF
+        $pdfBinaryData = $response->getBody()->getContents();
 
-        // Check the response status code
-        if ($response->getStatusCode() === 200) {
-            // Successfully received the filled PDF
-            $pdfBinaryData = $response->getBody()->getContents();
-
-            // Save the PDF to a file
-            file_put_contents('output.pdf', $pdfBinaryData);
-            echo 'PDF file saved successfully.';
-        } else {
-            // Handle errors or unexpected responses
-            echo 'Error: Unexpected response from Anvil API.';
-        }
-    } catch (Exception $e) {
-        // Handle exceptions (e.g., connection errors)
-        echo 'Error: ' . $e->getMessage();
+        // Save the PDF to a file or take any other desired action
+        file_put_contents('output.pdf', $pdfBinaryData);
+        echo 'PDF file saved successfully.';
+    } else {
+        // Handle errors or unexpected responses
+        echo 'Error: Unexpected response from Anvil API.';
     }
+} catch (Exception $e) {
+    // Handle exceptions (e.g., connection errors)
+    echo 'Error: ' . $e->getMessage();
+}
 
 
 
 }
-
-
 
 
 
