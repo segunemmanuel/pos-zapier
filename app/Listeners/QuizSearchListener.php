@@ -55,7 +55,8 @@ class QuizSearchListener
                 'completedDate'=>$item->completedDate,
                 'startDate'=>$item->startDate,
                 'email'=>$item->email,
-                'username'=>$item->username
+                'username'=>$item->username,
+                'courseName'=>$item->courseName
             ];
         } elseif ($item instanceof \App\Models\MemberPressUser) {
             // Customize the format for user details
@@ -73,12 +74,9 @@ class QuizSearchListener
                 'schoolCountry'=>$item->schoolCountry,
                 'level'=>$item->level
             ];
-        } else {
-            // Handle other types if needed
-            return [];
         }
     });
-    // Log::info($customizedCollection);
+    Log::info($customizedCollection);
 
         $this->zapierController->analyzeAssessment($customizedCollection);
     }

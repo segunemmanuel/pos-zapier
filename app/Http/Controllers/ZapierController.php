@@ -1,13 +1,13 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Events\QuizSearchEvent;
-use App\Models\Data;
+use App\Listeners\QuizSearchListener;
 use App\Models\MemberPressCourseCompletedUser;
 use App\Models\MemberPressQuizCompletedRecord;
 use App\Models\MemberPressUser;
 use App\Models\UserMemberPressData;
+use Exception;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use OpenAI\Client as OpenAIClient;
@@ -77,6 +77,11 @@ class ZapierController extends Controller
     }
 
 
+    /**
+     * @param Request $request
+     *
+     * @return [type]
+     */
     public function createMemberPressQuizRecordWhenCompleted(Request $request)
     {
         $data = $request->all();
@@ -131,28 +136,89 @@ class ZapierController extends Controller
                     'max_tokens' => 200,  // Adjust max_tokens as needed
                     'temperature' => 0.7,  // Adjust temperature as needed
                 ]);
-
-                // Get the generated response text
                 $generatedResponse = $response['choices'][0]['text'];
-
                 // Store the response for this quiz or user record
                 $responses[] = [
                     'record_type' => $data['record_type'],
                     'quizName' => $quizName,
                     'courseName'=>$data['courseName'],
                     'quizId'=>$data['quizId'],
+                    'username'=>$data['username'],
+                    'email'=>$data['email'],
                     'actionPlans' => $generatedResponse,
                 ];
             }
         }
+ // Get the generated response text
+
+    $filteredUserRecords = $customizedCollection->filter(function ($item) {
+        return $item['record_type'] === 'user';
+    })->values();
+
 
         // Log the responses for debugging
-        Log::info($responses);
 
         // Return the generated responses as JSON
-        return response()->json([
+ $dataResponse = response()->json([
+            'message'=>'Record created successfully',
             'responses' => $responses,
+            'schoolDetails'=>$filteredUserRecords,
+
+        ],201);
+Log::info($dataResponse);
+
+}
+
+
+
+public function createSamplePDF(Request $request)
+{
+
+
+    $username = 'FsmVT2JdbQATPnfBKSgndBtNusV9AARx'; // Username
+    $password = ''; // Empty password
+    $pdfTemplateID=;
+
+    // Create a Guzzle client
+    $client = new Client();
+
+    // Define the API endpoint for Anvil
+    $apiEndpoint = 'https://app.useanvil.com/api/v1/fill/41uEFk6E6OKG5AfnlCgy.pdf';
+
+    try {
+        // Send a POST request to the Anvil API with Basic Authentication
+        $response = $client->post($apiEndpoint, [
+            'json' => [
+                'template_id' => $pdfTemplateID,
+                'data' => $exampleData,
+            ],
+            'auth' => [$username, $password], // Basic Authentication
         ]);
+
+        // Check the response status code
+        if ($response->getStatusCode() === 200) {
+            // Successfully received the filled PDF
+            $pdfBinaryData = $response->getBody()->getContents();
+
+            // Save the PDF to a file
+            file_put_contents('output.pdf', $pdfBinaryData);
+            echo 'PDF file saved successfully.';
+        } else {
+            // Handle errors or unexpected responses
+            echo 'Error: Unexpected response from Anvil API.';
+        }
+    } catch (Exception $e) {
+        // Handle exceptions (e.g., connection errors)
+        echo 'Error: ' . $e->getMessage();
     }
-    }
+
+
+
+}
+
+
+
+
+
+}
 

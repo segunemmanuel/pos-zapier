@@ -26,6 +26,10 @@ Route::post('/save-membepress-user', [ZapierController::class, 'createMemberPres
 Route::post('/save-memberpress-course-compeleted',[ZapierController::class, 'createMemberPressCourseCompletedRecords']);
 
 Route::post('/save-memberpress-quiz-compeleted',[ZapierController::class, 'createMemberPressQuizRecordWhenCompleted']);
+Route::post('/create-pdf',[ZapierController::class, 'createSamplePDF']);
+
+
+
 
 
 
