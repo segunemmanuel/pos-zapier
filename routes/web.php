@@ -21,3 +21,8 @@ Route::get('/', function () {
 Route::get('/pdf', function () {
     return view('pdf');
 });
+
+
+// Route::get('/download-pdf/{filename}', 'ZapierController@downloadPdf')
+
+Route::get('/download-pdf/{filename}',[ZapierController::class, 'downloadPdf'])->name('download-pdf');

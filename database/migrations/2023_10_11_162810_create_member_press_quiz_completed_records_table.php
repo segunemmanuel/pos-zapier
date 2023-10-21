@@ -17,23 +17,24 @@ return new class extends Migration
                 $table->integer('courseId')->nullable();
                 $table->string('quizName')->nullable();
                 $table->string('courseName')->nullable();
-                $table->integer('quizScore')->nullable();
-                  $table->integer('totalScorePossible')->nullable();
-                   $table->string('username')->nullable();
-                   $table->string('lastName')->nullable();
-                   $table->string('firstName')->nullable();
-                   $table->string('email')->nullable();
-                   $table->dateTime('completedDate')->nullable();
-                   $table->string('completionStatus')->nullable();
-                   $table->dateTime('startDate')->nullable();
-                   $table->integer('quizAttemptId')->nullable();
-                   $table->json('miscData')->nullable();
-                   $table->integer('quizPointsScored')->nullable();
-                   $table->integer('quizPointsPossible')->nullable();
-                   $table->string('fullname')->nullable();
-                   $table->integer('user_id')->nullable();
+                $table->string('quizScore')->nullable();
+                $table->string('totalScorePossible')->nullable();
+                $table->string('username')->nullable();
+                $table->string('lastName')->nullable();
+                $table->string('firstName')->nullable();
+                $table->string('email')->nullable();
+                $table->dateTime('completedDate')->nullable();
+                $table->string('completionStatus')->nullable();
+                $table->dateTime('startDate')->nullable();
+                $table->integer('quizAttemptId')->nullable();
+                $table->json('miscData')->nullable();
+                $table->integer('quizPointsScored')->nullable();
+                $table->integer('quizPointsPossible')->nullable();
+                $table->string('fullname')->nullable();
+                $table->integer('user_id')->nullable();
                 $table->timestamps();
-        });
+
+            });
     }
 
     /**
