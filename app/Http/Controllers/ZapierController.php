@@ -118,7 +118,6 @@ class ZapierController extends Controller
         }
 
 
-
         public function analyzeAssessment($customizedCollection)
         {
             // dd($customizedCollection);
@@ -139,7 +138,7 @@ class ZapierController extends Controller
                         'prompt' => $prompt,
                         'max_tokens' => 200,
                         // Adjust max_tokens as needed
-                        'temperature' => 0.7,
+                        'temperature' => 1,
                         // Adjust temperature as needed
                     ]);
                     $generatedResponse = $response['choices'][0]['text'];
@@ -246,7 +245,7 @@ class ZapierController extends Controller
           // Get the PDF record from the database by the filename
           $pdfRecord = PDFRecord::where('filename', $filename)->first();
 
-        Mail::to($pdfRecord->email)->send(new PDFMail( $filename));
+        // Mail::to($pdfRecord->email)->send(new PDFMail( $filename));
 
                 //   return response()->download($pdfPath, $filename);
 
