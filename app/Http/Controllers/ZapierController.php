@@ -26,12 +26,8 @@ class ZapierController extends Controller
          */
         public function createMemberPressUser(Request $request)
         {
-            // Assuming you're using the default Laravel Request object
             $data = $request->all();
-
-            // Create a new instance of your model and fill it with the request data
-            $newRecord = new MemberPressUser(); // Replace 'YourModel' with the actual name of your model
-
+            $newRecord = new MemberPressUser();
             $newRecord->name = $data['name'];
             $newRecord->email = $data['email'];
             $newRecord->username = $data['username'];
@@ -120,7 +116,9 @@ class ZapierController extends Controller
 
         public function analyzeAssessment($customizedCollection)
         {
-            // dd($customizedCollection);
+
+
+
             $responses = [];
             foreach ($customizedCollection as $data) {
                 // Check if it's a quiz record or user record
@@ -133,14 +131,26 @@ class ZapierController extends Controller
                     $prompt = "Based on public data from schoolsafety.gov, is $score out of $totalScorePossible possible scores good for a school trying to improve its $quizName and improve gun safety readiness. Send action plans or recommendations for improvements (This is a must!). Send action plans in bullet points with a paragraph summarizing. Please use a formal tone and avoid using 'yes' or 'no' in the response.";
 
                     // Generate a response using OpenAI
-                    $response = OpenAI::completions()->create([
-                        'model' => 'text-davinci-003',
-                        'prompt' => $prompt,
-                        'max_tokens' => 200,
-                        // Adjust max_tokens as needed
-                        'temperature' => 1,
-                        // Adjust temperature as needed
-                    ]);
+                    $maxRetries = 3;
+                    $retryCount = 0;
+
+                    do {
+                        try {
+                            $response = OpenAI::completions()->create([
+                                'model' => 'text-davinci-003',
+                                'prompt' => $prompt,
+                                'max_tokens' => 200,
+                                'temperature' => 0.7,
+                                // 'timeout' => 60, // Adjust the timeout value in seconds
+                            ]);
+                            break; // Break the loop if the request succeeds
+                        } catch (\Exception $e) {
+                            $retryCount++;
+                            if ($retryCount >= $maxRetries) {
+                                throw $e; // Re-throw the exception if retries are exhausted
+                            }
+                        }
+                    } while ($retryCount < $maxRetries);
                     $generatedResponse = $response['choices'][0]['text'];
                     // Store the response for this quiz or user record
                     $responses[] = [
@@ -154,16 +164,11 @@ class ZapierController extends Controller
                     ];
                 }
             }
-    // Get the generated response text
-
-        $filteredUserRecords = $customizedCollection->filter(function ($item) {
+    $filteredUserRecords = $customizedCollection->filter(function ($item) {
             return $item['record_type'] === 'user';
         })->values();
 
 
-            // Log the responses for debugging
-
-            // Return the generated responses as JSON
     $dataResponse = response()->json([
                 'message'=>'Record created successfully',
                 'responses' => $responses,
@@ -199,6 +204,8 @@ class ZapierController extends Controller
 
     // Additional fields
     // $transformedData['caste92b20d0618011ee93c9ad36b206e3d6'] = 'Action Points';
+
+Log::info($transformedData);
 
     // Create the final structure
     $finalData = [
@@ -263,6 +270,11 @@ class ZapierController extends Controller
 
 
 
+    /**
+     * @param mixed $filename
+     *
+     * @return [type]
+     */
     public function downloadPdf($filename)
     {
         // Get the PDF record from the database by the filename
@@ -275,6 +287,7 @@ class ZapierController extends Controller
             // Check if the file exists
             if (file_exists($pdfPath)) {
                 // Return the PDF file as a download response
+                Log::info($filename);
                 return response()->download($pdfPath, $filename);
             }
         }
