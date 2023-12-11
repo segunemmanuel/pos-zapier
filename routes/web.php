@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\ZapierController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,18 @@ Route::get('/pdf', function () {
 // Route::get('/download-pdf/{filename}', 'ZapierController@downloadPdf')
 
 Route::get('/download-pdf/{filename}',[ZapierController::class, 'downloadPdf'])->name('download-pdf');
+Route::get('/download-report',[ZapierController::class, 'generatePDFView']);
+Route::post ('/charts',[ChartController::class, 'index'])->name('chart');
+
+
+
+Route::get('/graph', function () {
+    // TODO: Generate graph
+    return view('chart');
+});
+
+
+Route::get('/graphzz', function () {
+    // TODO: Generate graph
+    return view('dump');
+});

@@ -1,0 +1,57 @@
+{
+  "message": "Record created successfully",
+  "responses": [
+    {
+      "record_type": "quiz",
+      "quizName": "Law Enforcement Alliance [7]",
+      "courseName": "SITE|SAFETYNET\u2120 DEMO",
+      "quizId": 4200,
+      "username": "sarah8080",
+      "email": "sarah8080@gmail.com",
+      "actionPlans": "\n\nThe score of 3 out of 7 for Law Enforcement Alliance indicates that there is room to grow when it comes to gun safety and readiness. To ensure a safe and secure school environment, action plans should be proposed for improvement in the following areas: \n\n\u2022 Increase the personnel trained in threat and risk assessments and evaluations. \n\u2022 Create, maintain, and update emergency and incident response plans. \n\u2022 Promote collaboration between all members of the school safety committee. \n\u2022 Develop procedures to identify and respond to threats of violence or behavior that may endanger the safety of students and staff.\n\u2022 Develop a comprehensive plan to monitor access to areas of the school to which students and staff do not typically have access.\n\u2022 Create and maintain a list of community resources that can be quickly accessed to assist staff and students in the event of an emergency. \n\u2022 Foster a reporting environment where staff and students can voice concerns and recognize concerning behavior.\n\nOverall, increasing law enforcement alliance"
+    },
+    {
+      "record_type": "quiz",
+      "quizName": "Facility Exterior [7]",
+      "courseName": "SITE|SAFETYNET\u2120 DEMO",
+      "quizId": 4201,
+      "username": "sarah8080",
+      "email": "sarah8080@gmail.com",
+      "actionPlans": "\n\n3 out of 7 possible scores is not considered good for school safety readiness. In order to improve its Facility Exterior and gun safety readiness, the school should begin to implement the following action plans:\n\n\u2022 Improve exterior facility security monitoring, such as adding exterior security cameras covering blind spots and motion sensor lighting.\n\u2022 Increase visibility of school entrances by redesigning the area and placing fencing and\/or wall barriers around property.\n\u2022 Establish and enforce a \u201cno guns allowed\u201d policy strictly to all students and visitors entering the school.\n\u2022 Educate students, staff and parents on safe usage and storage of guns and provide gun safety training resources.\n\u2022 Develop an emergency protocol for response to gun violence emergencies, including crisis management training for staff and law enforcement.\n\u2022 Regularly conduct drills, such as Active Shooter drills, to ensure staff and students are aware of the protocol and better prepared in the case of an actual emergency.\n\u2022 Monitor the usage of school grounds"
+    },
+    {
+      "record_type": "quiz",
+      "quizName": "School Details + Demographics",
+      "courseName": "SITE|SAFETYNET\u2120 DEMO",
+      "quizId": 4219,
+      "username": "sarah8080",
+      "email": "sarah8080@gmail.com",
+      "actionPlans": "\n\nSix out of seven possible scores is relatively good for a school trying to improve its School Details + Demographics and improve gun safety readiness. However, there is room for improvement. The following action plans can help a school move closer towards its goal:\n\n\u2022 Take an inventory of the school, documenting problems related to School Details + Demographics that may have been causing security issues. Utilize the feedback from students, staff, and community members to make improvements. \n\n\u2022 Use the results of the inventory to design a comprehensive gun safety program that can address issues on both the school and the community level. \n\n\u2022 Reach out to local law enforcement to evaluate current gun safety measures at the school. Include the recommendations of law enforcement officials in the gun safety program. \n\n\u2022 Create a gun safety task force to make sure the gun safety program is implemented successfully and any issues are addressed quickly. \n\n\u2022 Provide gun safety education and training to staff and faculty."
+    },
+    {
+      "record_type": "quiz",
+      "quizName": "Facility Interior [7]",
+      "courseName": "SITE|SAFETYNET\u2120 DEMO",
+      "quizId": 4202,
+      "username": "sarah8080",
+      "email": "sarah8080@gmail.com",
+      "actionPlans": "\n\nFour out of seven possible scores is not a great score for a school looking to improve its facility interior and gun safety readiness. To improve, the following action plans should be implemented:\n\n\u2022 Establish a clear protocol for handling firearms and accessing ammunition to ensure the proper security measures are in place to minimize threats or violations of school policy.\n\n\u2022 Make sure the facility interior is up-to-date with modern security systems and technology, such as metal detectors and alarm systems, and receive proper maintenance.\n\n\u2022 Work in collaboration with the community and local law enforcement to create an effective plan to secure the interior of the school.\n\n\u2022 Establish clear emergency protocols to ensure that students and faculty are properly protected in case of emergencies.\n\n\u2022 Train school staff and faculty in gun safety and emergency response procedures.\n\n\u2022 Invest in mental health and counseling services for students that may need intervention or support during unanticipated crises.\n\n\u2022 Develop a comprehensive plan that outlines"
+    }
+  ],
+  "schoolDetails": [
+    {
+      "record_type": "user",
+      "username": "sarah8080",
+      "email": "sarah8080@gmail.com",
+      "school": "Chapel High",
+      "schoolAddress": "11 street main",
+      "userAddress": "StilringGBUK",
+      "enrollment": "2500-or-more",
+      "geolocation": "urban",
+      "squareFeet": "less-than-10000-square-feet",
+      "schoolAcres": "100-or-more-acres",
+      "schoolCountry": "GB",
+      "level": "elementary"
+    }
+  ]
+}

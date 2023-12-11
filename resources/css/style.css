@@ -1,0 +1,12 @@
+/* style.css */
+body {
+    background-color: #f8f9fa;
+  }
+
+  .report-header {
+    background-color: #007bff; /* Bootstrap primary color */
+  }
+
+  .report-footer {
+    background-color: #343a40; /* Bootstrap dark color */
+  }

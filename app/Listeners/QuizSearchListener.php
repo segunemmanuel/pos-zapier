@@ -22,63 +22,71 @@ class QuizSearchListener
             $this->zapierController=$zapierController;
         //
     }
-
     /**
      * Handle the event.
      */
-    public function handle(QuizSearchEvent $event)
-    {
 
-        $email = $event->email;
-        $courseName = $event->courseName;
+     public function handle(QuizSearchEvent $event)
+{
+    $email = $event->email;
+    $courseName = $event->courseName;
 
-        $quizzes = MemberPressQuizCompletedRecord::where('email', $email)
+    // Fetch user details
+    $user = MemberPressUser::where('email', $email)->first();
+
+    if (!$user) {
+        // Handle the case where the user is not found
+        Log::warning("User not found for email: {$email}");
+        return response()->json(['error' => 'User not found'], 404);
+    }
+
+    // Fetch quizzes associated with the user
+    $quizzes = MemberPressQuizCompletedRecord::where('email', $email)
         ->where('courseName', $courseName)
         ->get();
 
-    $userDetails = MemberPressUser::where('email', $email)->first();
-
-    // Combine $quizzes and $userDetails into one collection
-    $combinedCollection = $quizzes->concat([$userDetails]);
-
-    $customizedCollection = $combinedCollection->map(function ($item) {
-        if ($item instanceof \App\Models\MemberPressQuizCompletedRecord) {
-            // Customize the format for quiz records
-            return [
-                'record_type' => 'quiz',
-                'quizId' => $item->quizId,
-                'quizName' => $item->quizName,
-                'score'=>$item->quizPointsScored,
-                'totalScorePossible'=>$item->quizPointsPossible,
-                'fullname'=>$item->fullname,
-                'courseId'=>$item->courseId,
-                'completedDate'=>$item->completedDate,
-                'startDate'=>$item->startDate,
-                'email'=>$item->email,
-                'username'=>$item->username,
-                'courseName'=>$item->courseName
-            ];
-        } elseif ($item instanceof \App\Models\MemberPressUser) {
-            // Customize the format for user details
-            return [
-                'record_type' => 'user',
-                'username' => $item->username,
-                'email' => $item->email,
-                'school'=>$item->school,
-                'schoolAddress'=>$item->schoolAddress,
-                'userAddress'=>$item->userAddress,
-                'enrollment'=>$item->enrollment,
-                'geolocation'=>$item->geolocation,
-                'squareFeet'=>$item->squareFeet,
-                'schoolAcres'=>$item->schoolAcres,
-                'schoolCountry'=>$item->schoolCountry,
-                'level'=>$item->level
-            ];
-        }
+    // Transform quizzes
+    $quizzesTransformed = $quizzes->map(function ($quiz) {
+        return [
+            'quizId' => $quiz->quizId,
+            'quizName' => $quiz->quizName,
+            'score' => $quiz->quizPointsScored,
+            'totalScorePossible' => $quiz->quizPointsPossible,
+            'completedDate' => $quiz->completedDate,
+            'startDate' => $quiz->startDate,
+            'fullname'=> $quiz->fullname,
+            'courseId'=> $quiz->courseId,
+            'username'=> $quiz->username,
+            'courseName'=> $quiz->courseName,
+            'email'=>$quiz->email,
+        ];
     });
 
-        $this->zapierController->analyzeAssessment($customizedCollection);
-    }
+    // Combine user details with quizzes
+    $response = [
+        'record_type' => 'user&quiz',
+        'username' => $user->username,
+        'school' => $user->school,
+        'schoolAddress'=> $user->schoolAddress,
+        'userAddress'=> $user->userAddress,
+        'enrollment'=> $user->enrollment,
+        'geolocation'=> $user->geolocation,
+        'squareFeet'=> $user->squareFeet,
+        'schoolAcres'=> $user->schoolAcres,
+        'schoolCountry'=> $user->schoolCountry,
+        'level'=> $user->level,
+        'email'=>$user->email,
+        'quizzes' => $quizzesTransformed
+    ];
+
+    $jsonResponse = json_encode($response);
+
+    // Log::info("Response: " . $jsonResponse);
+    // dd($jsonResponse);
+
+    $this->zapierController->analyzeAssessment($jsonResponse);
+
+}
 
 
 

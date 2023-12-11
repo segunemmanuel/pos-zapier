@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\ZapierController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -28,10 +29,7 @@ Route::post('/save-memberpress-course-compeleted',[ZapierController::class, 'cre
 Route::post('/save-memberpress-quiz-compeleted',[ZapierController::class, 'createMemberPressQuizRecordWhenCompleted']);
 Route::post('/create-pdf',[ZapierController::class, 'createSamplePDF']);
 
+Route::get('/chart', [ChartController::class, 'show'])->name('graph');
 
-
-
-
-
-
+Route::get( '/data', [ZapierController::class, 'generateInsightsDemo']);
 
