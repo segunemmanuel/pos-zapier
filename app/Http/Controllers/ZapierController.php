@@ -199,26 +199,18 @@ class ZapierController extends Controller
          */
         public function analyzeAssessment($jsonResponse)
         {
-
-
             $data = json_decode($jsonResponse, true);
-
-
-
             if (!$data) {
                 // Log::error('Invalid JSON response.');
                 return response()->json(['error' => 'Invalid JSON response'], 422);
             }
-
             $responses = [];
             $userDetails = [];
-
             foreach ($data as $key => $value) {
                 if ($key === 'quizzes') {
                     foreach ($value as $quizData) {
                         $prompt = $this->generatePromptForQuiz($quizData);
                         $generatedResponse = $this->getOpenAIResponse($prompt);
-
                         $responses[] = [
                             'record_type' => 'quiz',
                             'quizName' => $quizData['quizName'],
@@ -248,7 +240,7 @@ class ZapierController extends Controller
             ];
 
             Log::info($finalResponse);
-
+            dd($finalResponse);
 
             // For example, sending to Anvil API, saving to database, etc.
             $this->transformDataForAnvil($finalResponse);
@@ -269,7 +261,7 @@ class ZapierController extends Controller
 
             $quizName = $quizData['quizName'];
 
-            return "Based on public data from schoolsafety.gov, is $score out of $totalScorePossible possible scores good for a school trying to improve its $quizName and improve gun safety readiness. Send action plans or recommendations for improvements (This is a must!). Send action plans in bullet points with a paragraph summarizing. Be assertive not unsure. Please use a formal tone and avoid using 'yes' or 'no' in the response.";
+            return "Based on public data from schoolsafety.gov, is $score out of $totalScorePossible possible scores good for a school trying to improve its $quizName and improve gun safety readiness. Send action plans or recommendations for improvements (This is a must!). Send action plans in bullet points with a paragraph summarizing. Be assertive not unsure. Please use a formal tone and avoid using 'yes' or 'no' in the response.Remove in summary part,Just listen action points,";
         }
 
         /**
@@ -338,8 +330,8 @@ class ZapierController extends Controller
                 'enrollment' => $data['schoolDetails']['enrollment'],
                 'squareFeet' => $data['schoolDetails']['squareFeet'],
                 'schoolAcres' => $data['schoolDetails']['schoolAcres'],
-                'courseName' => $data['responses'][0]['courseName'], // Adjust as needed
-                'score' => $data['responses'][0]['score'], // Adjust as needed
+                'courseName' => $data['responses']['courseName'], // Adjust as needed
+                'score' => $data['responses']['score'], // Adjust as needed
                 'quizName' => array_column($data['responses'], 'quizName'),
                 'actionPlans' =>array_column($data['responses'], 'actionPlans'), // Combining all action plans
             ]
@@ -642,7 +634,7 @@ $piePlot->SetLegends($labelsIncidents);
 $pieGraphIncidents->Add($piePlot);
 
 // Specify the title of the pie chart
-$pieGraphIncidents->title->Set("Breakdown of Incidents by School Level");
+$pieGraphIncidents->title->Set("Breakdown of Incidents by Different School Level");
 
 // Display the pie chart and get the image data
 ob_start();
