@@ -238,7 +238,6 @@ class ZapierController extends Controller
                 'schoolDetails' => $userDetails,
                 // 'actionPlans'=>$generatedResponse,
             ];
-
             Log::info($finalResponse);
 
             // For example, sending to Anvil API, saving to database, etc.
@@ -329,8 +328,10 @@ class ZapierController extends Controller
                 'enrollment' => $data['schoolDetails']['enrollment'],
                 'squareFeet' => $data['schoolDetails']['squareFeet'],
                 'schoolAcres' => $data['schoolDetails']['schoolAcres'],
-                'courseName' => $data['responses']['courseName'], // Adjust as needed
-                'score' => $data['responses']['score'], // Adjust as needed
+                // 'courseName' => $data['responses'][0]['courseName'], // Adjust as needed
+                // 'score' => $data['responses'][0]['score'], // Adjust as needed
+                'courseName'=>'Demo',
+                'score'=>'10%',
                 'quizName' => array_column($data['responses'], 'quizName'),
                 'actionPlans' =>array_column($data['responses'], 'actionPlans'), // Combining all action plans
             ]
