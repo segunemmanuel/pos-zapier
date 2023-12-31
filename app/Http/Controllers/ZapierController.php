@@ -240,7 +240,6 @@ class ZapierController extends Controller
             ];
 
             Log::info($finalResponse);
-            dd($finalResponse);
 
             // For example, sending to Anvil API, saving to database, etc.
             $this->transformDataForAnvil($finalResponse);
@@ -664,10 +663,77 @@ $base64ImageSchoolIncidence = base64_encode($image_dataSchoolIncident);
     // Save the PDF to the file system
     $pdf->save($filePath);
 
+    // Generate the URL for accessing the PDF
+$pdfUrl = url('pdf/' . $filename);
+Log::info($pdfUrl);
+
     // Return the filename for further use
     return $filename;
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
