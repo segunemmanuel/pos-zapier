@@ -328,10 +328,8 @@ class ZapierController extends Controller
                 'enrollment' => $data['schoolDetails']['enrollment'],
                 'squareFeet' => $data['schoolDetails']['squareFeet'],
                 'schoolAcres' => $data['schoolDetails']['schoolAcres'],
-                // 'courseName' => $data['responses'][0]['courseName'], // Adjust as needed
-                // 'score' => $data['responses'][0]['score'], // Adjust as needed
-                'courseName'=>'Demo',
-                'score'=>'10%',
+                'courseName' => $data['responses'][0]['courseName'], // Adjust as needed
+                'score' => $data['responses'][0]['score'], // Adjust as needed
                 'quizName' => array_column($data['responses'], 'quizName'),
                 'actionPlans' =>array_column($data['responses'], 'actionPlans'), // Combining all action plans
             ]
