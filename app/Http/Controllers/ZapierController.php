@@ -84,7 +84,7 @@ class ZapierController extends Controller
            return  $this->fetchUserAndQuizData($data['email'], $data['courseName']);
             // return response()->json(['message' => 'Record created successfully', 'data' => $newRecord], 201);
 
-        }
+    }
 
 
 
@@ -175,7 +175,7 @@ class ZapierController extends Controller
                 'username' => $data['username'],
                 'lastName' => $data['lastName'],
                 'firstName' => $data['firstName'],
-                // 'email' => $data['email'],
+                'email' => $data['email'],
                 'completedDate' => $data['completedDate'],
                 'completionStatus' => $data['completionStatus'],
                 'startDate' => $data['startDate'],
