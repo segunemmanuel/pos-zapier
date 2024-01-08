@@ -277,7 +277,7 @@ class ZapierController extends Controller
             do {
                 try {
                     $response = OpenAI::completions()->create([
-                        'model' => 'text-davinci-003',
+                        'model' => 'gpt-3.5-turbo',
                         'prompt' => $prompt,
                         'max_tokens' => 200,
                         'temperature' => 0.7,
