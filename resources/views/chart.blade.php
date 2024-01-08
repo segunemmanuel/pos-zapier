@@ -17,6 +17,9 @@
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
   }
+  .container{
+background: white;
+  }
   .report-header, .report-footer {
     color: white;
     padding: 1rem;
@@ -647,21 +650,170 @@
 
 
 
-
-
 {{--  page 8  --}}
-
 <div class="page">
     <div class="row">
-        <div class="col-lg-12">
-        <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
-                    <img src="data:image/png;base64,{{$base64ImagePie }}" alt="Graph">
+        <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+            <h2 class="chart-title text-center">ASSESSMENT SCORES VISUALIZATIONS</h2>
+            <div style="text-align: center; width: 100%;">
+                <!-- The graph image is placed here -->
+            </div>
         </div>
     </div>
-
 </div>
 <div class="page-break"></div>
 {{--  end of page 8  --}}
+
+
+{{--  page 8 contd  --}}
+<div class="page">
+    <div class="row">
+        <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+            <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
+            <div style="text-align: center; width: 100%;">
+                <!-- The graph image is placed here -->
+            </div>
+            <p style="text-align: justify;  margin: 0 auto;">
+                This pie chart illustrates the distribution of school shooting incidents across different school levels within the K-12 education system. It highlights the proportion of incidents occurring at high schools, elementary schools, middle schools, junior high schools, and combined K-8 institutions. These insights are crucial for developing targeted strategies for prevention and preparedness, aimed at enhancing safety and security across all educational environments.
+            </p>
+            <ul>
+                <li><strong>High Schools:</strong> The data underscores the acute vulnerability of high schools to shooting incidents. Schools at this level may benefit from enhanced security measures, student support services, and threat assessment programs.</li>
+                <li><strong>Elementary Schools:</strong> While less frequent, the impact of such events at elementary levels can be profound, suggesting the need for age-appropriate safety education and crisis intervention strategies.</li>
+                <li><strong>Middle and Junior High Schools:</strong> These environments require tailored preventive measures that address the specific developmental stages of their students.</li>
+                <li><strong>Comprehensive K-8:</strong> For schools with a K-8 structure, a unified approach to safety that caters to the wide age range of students may be necessary.</li>
+            </ul>
+
+            <ul>
+                <li><strong>Risk Assessment:</strong> Your school should conduct a detailed risk assessment to identify specific vulnerabilities within their environment.</li>
+                <li><strong>Safety Education:</strong> Regular drills and safety education for students and staff can prepare them for emergency situations without causing undue alarm.</li>
+                <li><strong>Community Engagement:</strong> Involvement of parents and local community in safety measures can provide a broader support system for prevention efforts.</li>
+                <li><strong>Mental Health Resources:</strong> Provision of mental health resources is critical to address potential issues before they escalate into violence.</li>
+                <li><strong>Policy Review:</strong> A regular review of safety policies and procedures to ensure they are up to date and in line with the best practices is recommended.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page-break"></div>
+{{--  end of page 8  contd --}}
+
+
+
+
+{{--  page 8ii contd  --}}
+<div class="page">
+    <div class="row">
+        <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+            <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
+            <div style="text-align: center; width: 100%;">
+                <!-- The graph image is placed here -->
+            </div>
+            <p>This pie chart provides insights into the relationship between the shooter and the school in shooting incidents. For your school's assessment and safety planning, here's an interpretation of the data:</p>
+
+            <ul>
+                <li><strong>Nonstudent:</strong> The largest segment at 26.1% suggests that the majority of shooters are not current students, highlighting the need for security measures that address external threats.</li>
+                <li><strong>Former Student:</strong> 13.9% of shooters are former students, which underscores the importance of alumni tracking and awareness as part of your school's security strategy.</li>
+                <li><strong>Student:</strong> Current students account for 6.2% of shooters, emphasizing the need for in-school behavioral monitoring and support systems.</li>
+                <li><strong>Police Officer/SRO:</strong> A small 3.7% portion of incidents involve a school resource officer or police, which may reflect instances of response to an incident.</li>
+                <li><strong>Other Staff:</strong> Other school staff are involved in 2.3% of shooting incidents, indicating a need for thorough staff screening and security training.</li>
+                <li><strong>Parent:</strong> Parents are involved in 1.7% of the incidents, which could point to the necessity of secure visitor management protocols.</li>
+                <li><strong>Nonstudent Using Athletic Fields:</strong> Shooters using athletic fields who are not students represent 0.8% of the incidents, suggesting the need for perimeter security and management of sports facilities.</li>
+                <li><strong>Unknown:</strong> There is a 3.0% rate of incidents where the shooter's relation to the school is unknown, which highlights the need for preparedness in uncertain situations.</li>
+                <li><strong>No Relation:</strong> Lastly, a notable 3.0% of shooters have no relation to the school, reinforcing the need for comprehensive security measures that cover all possible threat vectors.</li>
+            </ul>
+
+            <p>Your school might use this data to review and strengthen the security measures to protect against threats both internal and external, ensuring a safe environment for students, staff, and visitors.</p>
+
+        </div>
+    </div>
+</div>
+<div class="page-break"></div>
+{{--  end of page 8ii contd --}}
+
+
+
+--
+
+
+
+{{--  page 8iii contd  --}}
+<div class="page">
+    <div class="row">
+        <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+            <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
+            <div style="text-align: center; width: 100%;">
+                <!-- The graph image is placed here -->
+            </div>
+                <p>The chart categorizes school shooting incidents into various time periods, showing the frequency of events during these intervals. Notably:</p>
+
+                <ul>
+                    <li><strong>Morning Classes:</strong> This time frame has the highest number of incidents, with 431 reported shootings. It indicates a critical need for heightened vigilance and preventive measures during the morning hours when classes are typically in session.</li>
+                    <li><strong>After School:</strong> The next most common period for shootings, with 321 incidents, occurs after school hours. This suggests that after-school activities and times when students may be lingering on campus are significant risk periods.</li>
+                    <li><strong>Class Change:</strong> The transition between classes is also a notable risk period, with 272 incidents. This could be due to the movement of students and less structured environments.</li>
+                    <li><strong>Lunchtime:</strong> There are 280 incidents reported during lunch hours, which is a time when students are gathered in large numbers and supervision might be more challenging.</li>
+                    <li><strong>Evening Events:</strong> Evening activities at the school account for 162 incidents, which may include sports events, meetings, or other school functions.</li>
+                    <li><strong>During Class:</strong> Shootings that occur specifically during class sessions number at 150, underscoring the need for in-classroom security protocols.</li>
+                    <li><strong>Night:</strong> The least number of incidents, 166, happen at night, suggesting that when the school is generally assumed to be empty or during night events, there is still a risk present.</li>
+                    <li><strong>Before School:</strong> There are 153 incidents reported in the time before classes begin, indicating that early morning hours when students start arriving are also vulnerable.</li>
+                    <li><strong>No School:</strong> Incidents occurring when school is not in session, such as during weekends or holidays, amount to 100, which reminds us that off-hours campus security is still important.</li>
+                </ul>
+
+                <p>Actionable Insights for Your School</p>
+                <ul>
+                    <li><strong>Enhanced Monitoring During High-Risk Times:</strong> Given that the morning classes and after-school periods are the highest risk times, your school may benefit from increased surveillance and staff presence during these windows.</li>
+                    <li><strong>Structured Class Change Protocols:</strong> Implementing structured supervision during class changes can help mitigate the associated risks.</li>
+                    <li><strong>Lunchtime Vigilance:</strong> Reinforcing lunchtime security measures, potentially with additional staff or monitored entry and exit points, could be beneficial.</li>
+                    <li><strong>Evening Event Planning:</strong> For events held in the evening, consider specific security plans that include crowd control and exit strategies.</li>
+                    <li><strong>Classroom Safety Measures:</strong> Regular drills and classroom-specific safety protocols could be critical during class sessions.</li>
+                    <li><strong>After-Hours Security:</strong> Despite lower incident numbers at night and before school, maintaining security measures during these times is crucial.</li>
+                    <li><strong>Off-Hours Campus Access:</strong> Limiting access to the school during non-school hours and securing the campus can help prevent incidents during these times.</li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div class="page-break"></div>
+{{--  end of page 8iii contd --}}
+
+
+
+
+{{--  page 8iv contd  --}}
+<div class="page">
+    <div class="row">
+        <div class="col-lg-12" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
+            <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
+            <div style="text-align: center; width: 100%;">
+                <!-- The graph image is placed here -->
+            </div>
+            <p>This pie chart presents the distribution of shooting incidents by school level. For your school, the interpretation of this data would be as follows:</p>
+
+            <ul>
+                <li><strong>High School:</strong> Representing the highest proportion at 30%, it suggests that high schools are the most common settings for such incidents, indicating a need for robust safety protocols at this level.</li>
+                <li><strong>College:</strong> With 25% of incidents, colleges also constitute a significant portion, emphasizing the need for advanced security measures in higher education institutions.</li>
+                <li><strong>Middle School:</strong> Account for 20% of the incidents, suggesting that schools serving this age group should also be vigilant and proactive in their safety measures.</li>
+                <li><strong>Elementary:</strong> Elementary schools, while less affected with 15%, still face considerable risk, highlighting the importance of age-appropriate security measures.</li>
+                <li><strong>Other:</strong> 10% of incidents occur in settings categorized as 'Other,' which may include alternative or special education institutions, pointing towards the need for inclusive safety strategies that address diverse educational environments.</li>
+            </ul>
+
+            <p>Your school can use this information to benchmark and potentially enhance your current safety and preparedness initiatives in alignment with the trends indicated by the data.</p>
+
+        </div>
+    </div>
+</div>
+<div class="page-break"></div>
+{{--  end of page 8iv contd --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
