@@ -425,8 +425,15 @@ public function generatePDFView($transformedData)
 {
 
     $email = $transformedData['data']['email'];
-    $quizzes = MemberPressQuizCompletedRecord::where('email', $email)->pluck('quizScore', 'quizName');
-    $scores = $quizzes->toArray();
+$quizzes = MemberPressQuizCompletedRecord::where('email', $email)->pluck('quizScore', 'quizName');
+
+$scores = $quizzes->mapWithKeys(function ($score, $quizName) {
+    // Remove the percentage sign and convert to a float value
+    $numericScore = (float) rtrim($score, '%');
+    return [$quizName => $numericScore];
+})->toArray();
+
+
 
     // Assuming $scores has quiz names as keys and their corresponding scores as values
     $labels = [];
@@ -470,7 +477,8 @@ foreach ($data as $key => $value) {
     // Display the value on the bars
     foreach ($barPlots as $barPlot) {
         $barPlot->value->Show();
-        $barPlot->value->SetFormat('%d%%'); // Format values as percentages
+        // $barPlot->value->SetFormat('%d%%');
+         // Format values as percentages
     }
 
     // Add the grouped bar plot to the graph
