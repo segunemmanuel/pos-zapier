@@ -693,7 +693,7 @@ $pdfRecord->save();
 Log::info($pdfRecord);
 
 // Mail::to('intellode@gmail.com')->send(new PDFMail($pdfUrl));
-$this->sendEmailWithPDF($pdfUrl);
+$this->sendEmailWithPDF($email,$pdfUrl);
 
 // Return the filename for further use
 return $filename;
@@ -701,8 +701,8 @@ return $filename;
     }
 
 
-    private function sendEmailWithPDF($pdfUrl) {
-        Mail::to('intellode@gmail.com')
+    private function sendEmailWithPDF($email,$pdfUrl) {
+        Mail::to($email)
     ->cc('segunemmanuel46@gmail.com')
     ->bcc('robert@protectingourstudents.org')
     ->send(new PDFMail($pdfUrl));

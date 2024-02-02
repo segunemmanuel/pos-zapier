@@ -141,3 +141,5 @@
 [2024-02-01 23:29:23] local.INFO: {"email":"intellode@gmail.com","filename":"http:\/\/127.0.0.1:8000\/pdf\/document_1706830146.pdf","updated_at":"2024-02-01T23:29:23.000000Z","created_at":"2024-02-01T23:29:23.000000Z","id":16}  
 [2024-02-01 23:33:06] local.INFO: http://127.0.0.1:8000/pdf/document_1706830371.pdf  
 [2024-02-01 23:33:06] local.INFO: {"email":"intellode@gmail.com","filename":"http:\/\/127.0.0.1:8000\/pdf\/document_1706830371.pdf","updated_at":"2024-02-01T23:33:06.000000Z","created_at":"2024-02-01T23:33:06.000000Z","id":17}  
+[2024-02-02 02:32:14] local.INFO: http://127.0.0.1:8000/pdf/document_1706841129.pdf  
+[2024-02-02 02:32:14] local.INFO: {"email":"intellode@gmail.com","filename":"http:\/\/127.0.0.1:8000\/pdf\/document_1706841129.pdf","updated_at":"2024-02-02T02:32:14.000000Z","created_at":"2024-02-02T02:32:14.000000Z","id":18}  
