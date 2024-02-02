@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChartController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ZapierController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,3 +43,13 @@ Route::get('/graphzz', function () {
     // TODO: Generate graph
     return view('dump');
 });
+
+Route::get('/download-reports',[ZapierController::class, 'bringRandomPdf']);
+
+Route::get('/view-reports',[ReportController::class, 'index']);
+Route::get('/delete-reports/{id}',[ReportController::class, 'delete'])->name('report.delete');
+
+
+
+
+

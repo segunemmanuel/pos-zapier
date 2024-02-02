@@ -145,23 +145,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
 {{--  page start  --}}
     <div class="page">

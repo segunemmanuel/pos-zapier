@@ -22,6 +22,7 @@ use Amenadiel\JpGraph\Plot\BarPlot;
 use Amenadiel\JpGraph\Plot\GroupBarPlot;
 use Amenadiel\JpGraph\Plot\PiePlot;
 use Amenadiel\JpGraph\Plot\Plot;
+use App\Mail\ExampleEmail;
 use App\Models\SafetyIncident;
 use Dompdf\Dompdf;
 use Illuminate\Http\Response;
@@ -243,7 +244,7 @@ class ZapierController extends Controller
                 'schoolDetails' => $userDetails,
                 // 'actionPlans'=>$generatedResponse,
             ];
-            Log::info($finalResponse);
+            // Log::info($finalResponse);
 
             // For example, sending to Anvil API, saving to database, etc.
             $this->transformDataForAnvil($finalResponse);
@@ -344,7 +345,7 @@ class ZapierController extends Controller
         return null; // Handle the error as required
     }
     // Log for debugging, remove or comment out for production
-    Log::info($transformedData);
+    // Log::info($transformedData);
 
     return $this->generatePDFView($transformedData);
 
@@ -676,37 +677,36 @@ $base64ImageSchoolIncidence = base64_encode($image_dataSchoolIncident);
     $pdf->save($filePath);
 
     // Generate the URL for accessing the PDF
-$pdfUrl = url('pdf/' . $filename);
-Log::info($pdfUrl);
+    $pdfUrl = url('pdf/' . $filename);
+    Log::info($pdfUrl);
 
-    // Return the filename for further use
-    return $filename;
+
+// Assume $email is available and contains the user's email address
+
+// Create a new PDFRecord instance and set its properties
+$pdfRecord = new PDFRecord();
+$pdfRecord->email = $email;
+$pdfRecord->filename =  $pdfUrl;
+
+// Save the record to the database
+$pdfRecord->save();
+Log::info($pdfRecord);
+
+// Mail::to('intellode@gmail.com')->send(new PDFMail($pdfUrl));
+$this->sendEmailWithPDF($pdfUrl);
+
+// Return the filename for further use
+return $filename;
 
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    private function sendEmailWithPDF($pdfUrl) {
+        Mail::to('intellode@gmail.com')
+    ->cc('segunemmanuel46@gmail.com')
+    ->bcc('robert@protectingourstudents.org')
+    ->send(new PDFMail($pdfUrl));
+    }
 
 
 
@@ -815,14 +815,4 @@ Log::info($pdfUrl);
 
 
 
-    public function bringRandomPdf()
-    {
-    //     ini_set('max_execution_time', 300); // 300 seconds = 5 minutes
-        $pdf = PDF::loadView('done');
-        return $pdf->download('safety_vulnerability_assessment_report.pdf');
-
-
-
-
-        }
 }

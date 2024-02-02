@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Safety and Vulnerability Assessment Report for {{$transformedData['title']}}</title>
 <!-- Include Bootstrap CSS -->
+{{--  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">  --}}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
   /* Inline styles for demonstration - move to an external stylesheet in production */
@@ -13,12 +14,22 @@
     page-break-after: always;
 }
 
+.content-summary-header h2 {
+    color: #f4a81c;
+    white-space: pre-line;
+    text-align: left;
+}
+.container::before {
+    content: none;
+}
+
+
   body {
-    background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: #ffffff;
   }
   .container{
-background: white;
+    background:none;
   }
   .report-header, .report-footer {
     color: white;
@@ -26,7 +37,10 @@ background: white;
     text-align: center;
   }
   .report-header {
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color:#f4a81c;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
   }
   .report-body {
     padding: 1rem;
@@ -35,13 +49,13 @@ background: white;
     font-size: 0.9rem;
   }
   .report-footer {
-    background-color: #343a40; /* Bootstrap dark color */
+    background-color:#f4a81c;
     padding: 0.8rem 1rem;
     margin-top: 1rem;
     font-size: 0.8rem;
   }
   h2 {
-    color:#007bff;
+    color:#060606;
   }
   ul {
     padding-left: 20px;
@@ -56,13 +70,13 @@ background: white;
 
 
 .content-summary-header {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white;
+    color:#f4a81c; /* Bootstrap's default text color */
+
   }
 
   .content-summary-body {
     background-color: white; /* Use Bootstrap's 'white' class or keep default */
-    color: #212529; /* Bootstrap's default text color */
+    color:#f4a81c; /* Bootstrap's default text color */
   }
 
   .content-summary-body ul li {
@@ -70,7 +84,7 @@ background: white;
   }
 
   .content-summary-body ul li span {
-    color: #28a745; /* Bootstrap 'success' color for check marks */
+    color:#f4a81c; /* Bootstrap's default text color */
     margin-right: 0.5rem;
   }
 
@@ -198,7 +212,6 @@ background: white;
     margin-bottom: 5px; /* Spacing between lines */
 }
 
-/* ... [Previous CSS styles] ... */
 
 .recommendations-container {
     background-color: #ffffff; /* White background */
@@ -397,21 +410,136 @@ background: white;
 
 
 
+{{--  for cover page  --}}
+.cover-image {
+    width: 110%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    page-break-inside: avoid;
+}
+
+{{--  end  --}}
+
+
+{{--    --}}
+.section-header {
+    font-size: 24px;
+
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 30px;
+}
+
+.section-content {
+    color:#9cb4d9;
+    font-size: 12px;
+    text-align: justify;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+{{--  end  --}}
 
 
 
+{{--  new  --}}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+    color: #333333;
+    font-size: 32px;
+}
+.content {
+    padding: 20px;
+}
+.icon-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px 0;
+}
+.icon-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #555555;
+}
+.icon-list i {
+    font-size: 50px; /* Adjusted to match icon size in the image */
+    color: #f0ad4e;  /* Icon color similar to the image */
+    margin-bottom: 8px;
+}
+.content  p {
+    color: #666666;
+    line-height: 1.6;
+}
+.content   h2 {
+    color: #333333;
+    font-size: 24px;
+}
+.content  ul {
+    margin: 0;
+    padding: 0;
+}
+.content  ul li {
+    list-style-type: none;
+    line-height: 1.6;
+    color: #666666;
+}
+
+{{--  end   --}}
 </style>
 </head>
 <body>
+
+
+{{--  page o  --}}
+<div class="page">
+
+    <div class="container text-center">
+        <img src="{{ public_path('images/logo.png') }}">
+        <!-- Cover Image -->
+        <img class="cover-image" src="{{ public_path('images/image1.png') }}" alt="Cover Page">
+        <!-- Other content -->
+    </div>
+
+
+</div>
+<div class="page-break"></div>
+
+{{--  end of page 0  --}}
+
+
 
 {{--  page 1  --}}
 <div class="page">
     <div class="container my-3">
     <div class="report-header">
-    <h1>Safety and Vulnerability Assessment Report</h1>
+    <h1 class="text-left">JAN 2024</h1>
     </div>
+
+    <div class="section-header">Introduction</div>
+    <div class="section-content">
+        <p>Our students and staff's safety and security are paramount in the contemporary educational landscape.</p>
+    </div>
+
+
     <div class="report-body">
-    <h2>Dear School Administrators,</h2>
+    <p>Dear School Administrators,</p>
     <p>Our students and staff's safety and security are paramount in the contemporary educational landscape. However, it is a sobering reality that many of our nation's schools were constructed at a time when these critical considerations were not at the forefront of design and planning. The result is a nationwide portfolio of educational facilities that may need more modern security standards, leaving them vulnerable to today's evolving threats.</p>
     <p>Recognizing the urgent need to address these challenges, we have leveraged state-of-the-art technology to provide a comprehensive Safety and Vulnerability Assessment through our digital site assessment mobile app, SITE|SAFETYNET℠. This digital report is not only a reflection of our commitment to employing the latest technology to safeguard our students but also a versatile tool that can be shared and utilized in various ways:</p>
     <ul>
@@ -441,20 +569,25 @@ background: white;
 <div class="page">
     <!-- New container for the Report Content Summary -->
     <div class="container my-3">
-      <div class="content-summary-header bg-primary text-white p-3 rounded">
-        <h2 class="text-center little">Report Content Summary</h2>
+      <div class="content-summary-header p-3">
+        <h2 class="text-left">Report
+            <span>Content</span></h2>
       </div>
 
       <div class="content-summary-body bg-light p-3 rounded">
         <ul>
-          <li class="mb-2"><span class="text-primary"></span> Assessed School</li>
-          <li class="mb-2"><span class="text-primary"></span> School Demography</li>
-          <li class="mb-2"><span class="text-primary"></span> Three (3) Levels – Improvement Areas</li>
-          <li class="mb-2"><span class="text-primary"></span> Level(s)-Improvement Areas</li>
-          <li class="mb-2"><span class="text-primary"></span> Recommendations</li>
-          <li class="mb-2"><span class="text-primary"></span> Assessment Score</li>
-          <li class="mb-2"><span class="text-primary"></span> Recommendations</li>
-          <li class="mb-2"><span class="text-primary"></span> About</li>
+          <li class="mb-2"><span class="text-primary"></span> Introduction</li>
+          <li class="mb-2"><span class="text-primary"></span> Overview</li>
+          <li class="mb-2"><span class="text-primary"></span> School</li>
+          <li class="mb-2"><span class="text-primary"></span> Demography </li>
+          <li class="mb-2"><span class="text-primary"></span> Methodology: AI</li>
+          <li class="mb-2"><span class="text-primary"></span>  Safety Audit Levels: Police – Exterior – Interior</li>
+          <li class="mb-2"><span class="text-primary"></span> Risk Assessment:</li>
+          <li class="mb-2"><span class="text-primary"></span>Compliance Metrics:</li>
+          <li class="mb-2"><span class="text-primary"></span>Recommendations:</li>
+          <li class="mb-2"><span class="text-primary"></span>Overall Safety Rating:</li>
+          <li class="mb-2"><span class="text-primary"></span>Data Visualization:</li>
+
         </ul>
       </div>
     </div>
@@ -463,6 +596,51 @@ background: white;
 {{--  end of page 2  --}}
 
 
+{{--  page added 3  --}}
+<div class="page">
+<div class="content">
+    <h1>SITE SAFETYNET™ OVERVIEW</h1>
+    <ul class="icon-list">
+        <li><i class="fas fa-"></i> SAFETY AUTOMATION</li>
+        <li><i class="fas fa-link"></i> END-TO-END</li>
+        <li><i class="fas fa-network-wired"></i> DIGITAL INFRASTRUCTURE</li>
+        <li><i class="fas fa-file-alt"></i> ACCURATE REPORT</li>
+    </ul>
+    <p>The SITE SAFETYNET™ report is a comprehensive document designed to give educational institutions and law enforcement agencies a clear, actionable roadmap for improving site safety.</p>
+    <p>By understanding each section of this report, users can make informed decisions that will help protect our students and create a safer learning environment.</p>
+    <h2>8. Methodology: AI</h2>
+    <ul>
+        <li>Explanation of data collection and analysis for transparency in the assessment.</li>
+    </ul>
+    <h2>9. Safety Audit Levels: Police – Exterior - Interior</h2>
+    <ul>
+        <li>Breakdown of the three levels of safety audits, showing where the institution stands.</li>
+    </ul>
+    <h2>10. Risk Assessment:</h2>
+    <ul>
+        <li>Detailed insights into potential vulnerabilities, categorized by severity.</li>
+    </ul>
+    <h2>11. Compliance Metrics:</h2>
+    <ul>
+        <li>Evaluation of how the institution measures against federal and state safety regulations.</li>
+    </ul>
+    <h2>12. Recommendations:</h2>
+    <ul>
+        <li>Actionable steps for improving safety measures.</li>
+    </ul>
+    <h2>13. Overall Safety Rating:</h2>
+    <ul>
+        <li>A score reflecting the general safety level of the site.</li>
+    </ul>
+    <h2>14. Data Visualization:</h2>
+    <ul>
+        <li>Additional data, charts, and references supporting the report's findings.</li>
+    </ul>
+</div>
+</div>
+<div class="page-break"></div>
+
+{{--  end of page added 3  --}}
 
 
 
@@ -657,6 +835,7 @@ background: white;
             <h2 class="chart-title text-center">ASSESSMENT SCORES VISUALIZATIONS</h2>
             <div style="text-align: center; width: 100%;">
                 <!-- The graph image is placed here -->
+                <img src="data:image/png;base64,{{$base64Image }}" alt="School Shooting Data Distribution" style="max-width: 100%; height: auto;">
             </div>
         </div>
     </div>
@@ -672,6 +851,7 @@ background: white;
             <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
             <div style="text-align: center; width: 100%;">
                 <!-- The graph image is placed here -->
+                <img src="data:image/png;base64,{{$base64ImagePie }}" alt="School Shooting Data Distribution" style="max-width: 100%; height: auto;">
             </div>
             <p style="text-align: justify;  margin: 0 auto;">
                 This pie chart illustrates the distribution of school shooting incidents across different school levels within the K-12 education system. It highlights the proportion of incidents occurring at high schools, elementary schools, middle schools, junior high schools, and combined K-8 institutions. These insights are crucial for developing targeted strategies for prevention and preparedness, aimed at enhancing safety and security across all educational environments.
@@ -706,6 +886,7 @@ background: white;
             <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
             <div style="text-align: center; width: 100%;">
                 <!-- The graph image is placed here -->
+                <img src="data:image/png;base64,{{ $base64Image2 }}" alt="School Shooting Data Distribution" style="max-width: 100%; height: auto;">
             </div>
             <p>This pie chart provides insights into the relationship between the shooter and the school in shooting incidents. For your school's assessment and safety planning, here's an interpretation of the data:</p>
 
@@ -742,6 +923,7 @@ background: white;
             <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
             <div style="text-align: center; width: 100%;">
                 <!-- The graph image is placed here -->
+                <img src="data:image/png;base64,{{ $base64Image3 }}" alt="School Shooting Data Distribution" style="max-width: 100%; height: auto;">
             </div>
                 <p>The chart categorizes school shooting incidents into various time periods, showing the frequency of events during these intervals. Notably:</p>
 
@@ -783,6 +965,7 @@ background: white;
             <h2 class="chart-title text-center">KEY FOCUS AREAS FOR K-12 SCHOOL SAFETY AND SECURITY: EXPANDING ACTIVE SHOOTER PREVENTION</h2>
             <div style="text-align: center; width: 100%;">
                 <!-- The graph image is placed here -->
+                <img src="data:image/png;base64,{{ $base64ImageSchoolIncidence }}" alt="School Shooting Data Distribution" style="max-width: 100%; height: auto;">
             </div>
             <p>This pie chart presents the distribution of shooting incidents by school level. For your school, the interpretation of this data would be as follows:</p>
 
