@@ -49,7 +49,7 @@ class PDFMail extends Mailable
     $to = Arr::get($this->to, '0.address');
 
     return $this
-        ->view('email.pdfMail')
+        ->view('email.pdfmail')
         ->subject('Your PDF Document')
         ->with([
             'pdfUrl' => $this->pdfUrl,
