@@ -705,7 +705,8 @@ return $filename;
 
     private function sendEmailWithPDF($username,$email,$pdfUrl) {
         Mail::to($email)
-    ->cc('robert@protectingourstudents.org')
+    ->cc('segunemmanuel46@gmail.com')
+    ->bcc('robert@protectingourstudents.org')
     ->send(new EmailsTemplate($username, $pdfUrl,$email));
     }
 
