@@ -22,6 +22,7 @@ use Amenadiel\JpGraph\Plot\BarPlot;
 use Amenadiel\JpGraph\Plot\GroupBarPlot;
 use Amenadiel\JpGraph\Plot\PiePlot;
 use Amenadiel\JpGraph\Plot\Plot;
+use App\Mail\EmailsTemplate;
 use App\Mail\ExampleEmail;
 use App\Models\SafetyIncident;
 use Dompdf\Dompdf;
@@ -426,6 +427,7 @@ public function generatePDFView($transformedData)
 {
 
     $email = $transformedData['data']['email'];
+$username=$transformedData['data']['name'];
 $quizzes = MemberPressQuizCompletedRecord::where('email', $email)->pluck('quizScore', 'quizName');
 
 $scores = $quizzes->mapWithKeys(function ($score, $quizName) {
@@ -693,7 +695,7 @@ $pdfRecord->save();
 Log::info($pdfRecord);
 
 // Mail::to('intellode@gmail.com')->send(new PDFMail($pdfUrl));
-$this->sendEmailWithPDF($email,$pdfUrl);
+$this->sendEmailWithPDF($username,$email,$pdfUrl);
 
 // Return the filename for further use
 return $filename;
@@ -701,11 +703,10 @@ return $filename;
     }
 
 
-    private function sendEmailWithPDF($email,$pdfUrl) {
+    private function sendEmailWithPDF($username,$email,$pdfUrl) {
         Mail::to($email)
-    ->cc('segunemmanuel46@gmail.com')
-    ->bcc('robert@protectingourstudents.org')
-    ->send(new PDFMail($pdfUrl));
+    ->cc('robert@protectingourstudents.org')
+    ->send(new EmailsTemplate($username, $pdfUrl,$email));
     }
 
 
